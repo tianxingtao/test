@@ -16,9 +16,18 @@
   
   
   
-    <meta name="description" content="你会后悔的!">
+    <meta name="description" content="准备 你需要准备好以下软件
+
+Node.js
+Git
+
+配置Node.js环境 下载Node.js安装文件
+
+Windows Install 32-Bit
+Windows Install 32-Bit根据自己Windows版本选择下载安装相应文件。安装时一路Next即可。配置Git环境下载Git安装文件
+Git-2.15.1.2-64-bit.exe下载安装时一路Next即可。验证安装同时按...">
   
-  <title>Don't use hexo building your blog. [ Huang ]</title>
+  <title>Hexo building your Blog. [ Huang ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -97,17 +106,32 @@
       
       
   <article id="post">
-    <h1>Don't use hexo building your blog.</h1>
+    <h1>Hexo building your Blog.</h1>
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2017-07-09</span>
       
-        <span id = "post-title-updated">修改于 2017-07-09</span>
+        <span id = "post-title-updated">修改于 2018-01-18</span>
       
       
       
     </p>
     
-    <p>你会后悔的!</p>
+    <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p> 你需要准备好以下软件</p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<h3 id="配置Node-js环境"><a href="#配置Node-js环境" class="headerlink" title="配置Node.js环境"></a>配置Node.js环境</h3><p> 下载Node.js安装文件</p>
+<ul>
+<li><a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x86.msi" target="_blank" rel="external">Windows Install 32-Bit</a></li>
+<li><a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi" target="_blank" rel="external">Windows Install 32-Bit</a><br>根据自己Windows版本选择下载安装相应文件。安装时一路Next即可。<h3 id="配置Git环境"><a href="#配置Git环境" class="headerlink" title="配置Git环境"></a>配置Git环境</h3>下载Git安装文件</li>
+<li><a href="https://git-scm.com/download/win" target="_blank" rel="external">Git-2.15.1.2-64-bit.exe</a><br>下载安装时一路Next即可。<h3 id="验证安装"><a href="#验证安装" class="headerlink" title="验证安装"></a>验证安装</h3>同时按下<strong>Win</strong>和<strong>R</strong>，输入cmd，敲击回车，打开命令行界面，在命令行界面中输入：<br>node -v<br>npm -v<br>git –version<br>如果结果如下图所示，则说明安装正确，可以进行下一步，否则需回去检查安装过程。</li>
+</ul>
+<h2 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h2><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>打开<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>,按照提示注册GitHub账号<br>登录之后点击页面右上角的加号，选择New repository：<br>进入代码库创建页面：<br>在 Repository name 下填写 yourname.github.io<br>正确创建后你将会看见如下界面：</p>
+<h3 id="开启gh-pages功能"><a href="#开启gh-pages功能" class="headerlink" title="开启gh-pages功能"></a>开启gh-pages功能</h3><p>点击界面右侧的 Setting，一直向下，直到看见GitHub Pages，然后点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了，这样Github的配置已经全部结束了。</p>
+<h2 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在自己认为合适的地方创建一个文件夹，然后在文件夹空白处按住Shift+鼠标右键，然后点击在此处打开命令行窗口。在命令行中依次输入：<br>npm install hexo-cli -g<br>npm install hexo –save<br>最后验证Hexo是否安装成功，在命令行中输入：<br>hexo -v<br>如果你看到了如图文字(版本号可能不一样)，则说明已经安装成功了。</p>
+<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><p>接着在命令行依次中输入：<br>hexo init<br>npm install<br>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。</p>
+<h3 id="首次体验Hexo"><a href="#首次体验Hexo" class="headerlink" title="首次体验Hexo"></a>首次体验Hexo</h3><p>继续在命令行中依次输入：<br>hexo g<br>hexo s<br>然后会提示INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>在浏览器中打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>，你将会看到：<br>到目前为止，Hexo在本地的配置已经全都结束了。</p>
 
   </article>
   <div class="random-toc-area">
@@ -115,7 +139,7 @@
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
     <h2>目录</h2>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置Node-js环境"><span class="toc-text">配置Node.js环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置Git环境"><span class="toc-text">配置Git环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证安装"><span class="toc-text">验证安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Github"><span class="toc-text">配置Github</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#注册"><span class="toc-text">注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开启gh-pages功能"><span class="toc-text">开启gh-pages功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Hexo"><span class="toc-text">配置Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Hexo"><span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化Hexo"><span class="toc-text">初始化Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#首次体验Hexo"><span class="toc-text">首次体验Hexo</span></a></li></ol></li></ol>
   </div>
 </div>
 
